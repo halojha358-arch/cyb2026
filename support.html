@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>冲一杯 · 技术支持</title>
+<meta name="description" content="冲一杯技术支持：联系方式、快速上手和常见问题。">
+<style>
+  :root {
+    --bg: #f6f1e8; --card: #ffffff; --ink: #2c1e10; --soft: #7a6a58; --line: #e6dfd3;
+    --accent: #b8865b; --hero: #3a2718; --hero-ink: #f6f1e8; --hero-soft: #c4a882;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #171110; --card: #241c17; --ink: #f0e8de; --soft: #a89882; --line: #3a2f24; --accent: #d4a06a; --hero: #2c1e10; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.75; font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-text-size-adjust: 100%; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  .hero { background: var(--hero); color: var(--hero-ink); padding: 56px 0 40px; }
+  .kicker { margin: 0 0 6px; font-size: 13px; letter-spacing: .12em; color: var(--hero-soft); }
+  .hero h1 { margin: 0; font-size: 32px; line-height: 1.3; }
+  .meta { margin: 10px 0 0; font-size: 14px; color: var(--hero-soft); }
+  main.wrap { padding-top: 24px; padding-bottom: 8px; }
+  .card { background: var(--card); border-radius: 20px; padding: 22px 22px 8px; margin: 0 0 16px;
+    box-shadow: 0 1px 2px rgba(44, 30, 16, .06); }
+  h2 { margin: 0 0 10px; font-size: 20px; line-height: 1.4; }
+  h3 { margin: 18px 0 4px; font-size: 16px; }
+  p, ul, ol { margin: 0 0 14px; }
+  ul, ol { padding-left: 1.3em; }
+  li { margin: 0 0 6px; }
+  .soft { color: var(--soft); font-size: 14px; }
+  footer { text-align: center; color: var(--soft); font-size: 13px; padding: 12px 0 40px; }
+  .button { display: inline-block; background: var(--accent); color: #fff; border-radius: 14px; padding: 11px 22px; font-weight: 600; margin: 4px 0 14px; }
+  .button:hover { text-decoration: none; opacity: .92; }
+  details { border-top: 1px solid var(--line); padding: 12px 0; }
+  details:first-of-type { border-top: 0; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "＋"; float: right; color: var(--soft); }
+  details[open] summary::after { content: "－"; }
+  details p { margin: 8px 0 0; color: var(--soft); }
+  .faq { padding-bottom: 14px; }
+  @media (max-width: 520px) { .hero h1 { font-size: 26px; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">CHONGYIBEI · 冲一杯</p>
+    <h1>技术支持</h1>
+    <p class="meta">配方、计时与风味手记。　版本 1.0.0 · 适用于 iOS 16.4 及以上的 iPhone</p>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="card" id="contact">
+  <h2>联系我们</h2>
+  <p>使用中遇到问题，或有功能建议，都可以联系我们。我们通常在 2 个工作日内回复。</p>
+  <a class="button" href="mailto:ShidelRobbi9013@outlook.com?subject=%E5%86%B2%E4%B8%80%E6%9D%AF%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">发送邮件</a>
+  <p class="soft">邮箱：ShidelRobbi9013@outlook.com<br>也可以在应用内"我的 → 意见反馈"中提交。<br>发邮件时附上手机型号、iOS 版本和问题截图，能帮我们更快找到原因。</p>
+</section>
+
+<section class="card" id="start">
+  <h2>快速上手</h2>
+  <ol>
+    <li>首次打开完成引导：设置昵称和默认参数。</li>
+    <li>在"冲煮"页选择一个配方，点"开始冲煮"进入引导模式。</li>
+    <li>跟着倒计时和水量提示一步一步来，每步会有提示音和震动。</li>
+    <li>冲完后可以记录风味评分、选择用的豆子，保存到手记。</li>
+    <li>在"豆仓"中管理你的咖啡豆，记录烘焙日期和剩余量。</li>
+    <li>在"手记"中翻阅每一杯的参数和口感。</li>
+    <li>"咖啡馆音景"可以在冲煮时播放背景音，锁屏后也会继续。</li>
+  </ol>
+</section>
+
+<section class="card faq" id="faq">
+  <h2>常见问题</h2>
+  <details>
+    <summary>冲煮时提示音没有响？</summary>
+    <p>请确认手机没有开静音模式，并在"我的 → 外观与触感"中确认"步骤提示音"已开启。如果使用了蓝牙耳机，提示音会从耳机播放。</p>
+  </details>
+  <details>
+    <summary>音景锁屏后停止了？</summary>
+    <p>音景支持锁屏后继续播放。如果被来电或其他应用的声音打断，回到"咖啡馆音景"页重新点播放即可。也请确认没有设置定时关闭。</p>
+  </details>
+  <details>
+    <summary>怎么自建配方？</summary>
+    <p>在"冲煮"页右上角点 ＋，选择器具、填写参数和步骤即可。也可以从已有配方点"编辑"复制一份再修改。</p>
+  </details>
+  <details>
+    <summary>我的数据保存在哪里？会上传吗？</summary>
+    <p>配方、豆子、冲煮记录、照片和设置都只保存在你的手机上。只有你主动提交"意见反馈"时，反馈内容才会发送到我们的服务器。详见<a href="privacy.html">隐私政策</a>。</p>
+  </details>
+  <details>
+    <summary>换手机时怎么迁移数据？</summary>
+    <p>在旧手机"我的 → 数据与备份 → 导出完整备份"，把 JSON 文件存到"文件"或发给自己；在新手机"我的 → 数据与备份 → 恢复"中选择这个文件。</p>
+  </details>
+  <details>
+    <summary>怎么删除全部数据？</summary>
+    <p>在"我的 → 数据与备份 → 清空全部数据"中确认即可删除，删除后无法恢复。也可以直接删除本应用。</p>
+  </details>
+  <details>
+    <summary>豆子的「赏味期」是怎么算的？</summary>
+    <p>根据烘焙日期和烘焙度，参考精品咖啡行业通用的养豆和赏味期窗口估算。浅焙豆的赏味期比深焙更长。结果仅供参考。</p>
+  </details>
+  <details>
+    <summary>怎么把音景投放到电视或音箱？</summary>
+    <p>在"咖啡馆音景"页底部点"投放到电视或音箱"，应用会搜索同一 Wi-Fi 下支持 DLNA 的设备。搜到后选择设备即可。如果搜不到，请确认已允许冲一杯访问"本地网络"。</p>
+  </details>
+  <details>
+    <summary>开启隐私锁后面容 ID 识别失败？</summary>
+    <p>可以改用设备密码解锁。如需关闭隐私锁，在"我的"页验证身份后关闭。</p>
+  </details>
+</section>
+
+<section class="card">
+  <h2>相关链接</h2>
+  <p><a href="privacy.html">隐私政策</a></p>
+</section>
+
+</main>
+<footer>© 2026 Mihra Sanem Erdogan · 冲一杯</footer>
+</body>
+</html>
